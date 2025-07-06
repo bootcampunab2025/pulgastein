@@ -2,6 +2,13 @@ a {
   text-decoration: none;
 }
 
+/* Estilos generales para imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -83,15 +90,46 @@ nav {
 
 
 main {
-  padding: 20px 160px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 20px 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    padding: 20px 160px;
+  }
 }
 
 .hero {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 400px;
   overflow: hidden;
   padding: 6px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .hero::before {
@@ -149,32 +187,44 @@ main {
   padding: 40px;
 }
 
-.colection {
+.collections-grid {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.colections {
+.collection-item {
   flex: 1;
   min-width: 280px;
   max-width: 600px;
   text-align: center;
 }
 
-.colections img {
+.collection-item img {
   width: 100%;
-  height: 600px;
+  height: 250px;
   object-fit: cover;
   border-radius: 20px;
 }
 
-.commitment {
+@media (min-width: 768px) {
+  .collection-item img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .collection-item img {
+    height: 400px;
+  }
+}
+
+.commitment-section {
   background: #f8f8f8;
 }
 
-.practices {
+.practices-grid {
   display: flex;
   gap: 20px;
   justify-content: space-between;
@@ -199,7 +249,25 @@ main {
   flex: 1 0 0;
 } */
 footer {
-  padding: 0 160px;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    padding: 0 160px;
+  }
 }
 
 .footer-container {
@@ -259,4 +327,78 @@ footer {
   font-weight: 400;
   line-height: 1.5rem;
   /* 150% */
+}
+
+/* Estilos responsivos para el header */
+@media (max-width: 768px) {
+  header {
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .header-nav {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .pages-container {
+    gap: 1rem;
+  }
+  
+  .pages-container a {
+    font-size: 0.8rem;
+  }
+  
+  .icons-container {
+    gap: 0.25rem;
+  }
+  
+  .icon {
+    padding: 0.5rem;
+  }
+}
+
+/* Estilos responsivos para el grid de colecciones */
+@media (max-width: 768px) {
+  .collections-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .collection-item {
+    max-width: 100%;
+  }
+}
+
+/* Estilos responsivos para las prácticas */
+@media (max-width: 768px) {
+  .practices-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .practice-box {
+    min-width: 100%;
+  }
+}
+
+/* Estilos responsivos para el hero text */
+@media (max-width: 768px) {
+  .hero-text {
+    padding: 1rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.8rem;
+  }
 }

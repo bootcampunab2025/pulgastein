@@ -8,45 +8,58 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <span><img src="./img/Logo.svg" alt="" /></span
-        ><strong><a class="logo-text" href="index.html">VerdeModa</a></strong>
+      <div class="header-brand">
+        <img src="./img/Logo.svg" alt="VerdeModa Logo" />
+        <strong><a class="logo-text" href="index.html">VerdeModa</a></strong>
       </div>
-      <nav>
+      <nav class="header-nav">
         <div class="pages-container">
-          <a href="tienda.html">Shop</a>
+          <a href="tienda.html" aria-current="page">Shop</a>
           <a href="sobre-nosotros.html">Sobre nosotros</a>
           <a href="blog.html">Blog</a>
           <a href="contacto.html">Contacto</a>
         </div>
         <div class="icons-container">
-          <a class="icon"><img src="./img/search.svg" alt="" /></a>
-          <a class="icon"><img src="./img/user.svg" alt="" /></a>
-          <a class="icon"><img src="./img/shopping-cart.svg" alt="" /></a>
+          <a href="#" class="icon" aria-label="Buscar">
+            <img src="./img/search.svg" alt="Buscar" />
+          </a>
+          <a href="#" class="icon" aria-label="Cuenta de usuario">
+            <img src="./img/user.svg" alt="Usuario" />
+          </a>
+          <a href="#" class="icon" aria-label="Carrito de compras">
+            <img src="./img/shopping-cart.svg" alt="Carrito" />
+          </a>
         </div>
       </nav>
     </header>
-    <section class="section">
-      <h1>Tienda</h1>
-      <p>Contenido en construcción.</p>
-    </section>
+    <main>
+      <section class="shop-section">
+        <h1>Tienda</h1>
+        <p>Contenido en construcción.</p>
+      </section>
+    </main>
     <footer>
       <div class="footer-container">
-        <nav>
+        <nav class="footer-nav">
           <a href="#privacy">Privacy Policy</a>
           <a href="#terms">Terms of Service</a>
           <a href="#returns">Shipping & Returns</a>
         </nav>
         <div class="social-container">
-          <span><img src="./img/instagram.svg" alt="" /></span>
-          <span><img src="./img/facebook.svg" alt="" /></span>
-          <span><img src="./img/twitter.svg" alt="" /></span>
+          <a href="#" aria-label="Instagram">
+            <img src="./img/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="./img/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img src="./img/twitter.svg" alt="Twitter" />
+          </a>
         </div>
         <div class="rights-container">
           <small>©2024 VerdeModa. All rights reserved.</small>
         </div>
       </div>
     </footer>
-    <small>©2024 VerdeModa. All rights reserved.</small>
   </body>
 </html>
