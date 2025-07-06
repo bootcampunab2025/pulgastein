@@ -8,11 +8,11 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <span><img src="./img/Logo.svg" alt="" /></span
-        ><strong><a class="logo-text" href="index.html">VerdeModa</a></strong>
+      <div class="header-brand">
+        <img src="./img/Logo.svg" alt="VerdeModa Logo" />
+        <strong><a class="logo-text" href="index.html" aria-current="page">VerdeModa</a></strong>
       </div>
-      <nav>
+      <nav class="header-nav">
         <div class="pages-container">
           <a href="tienda.html">Shop</a>
           <a href="sobre-nosotros.html">Sobre nosotros</a>
@@ -20,28 +20,34 @@
           <a href="contacto.html">Contacto</a>
         </div>
         <div class="icons-container">
-          <a class="icon"><img src="./img/search.svg" alt="" /></a>
-          <a class="icon"><img src="./img/user.svg" alt="" /></a>
-          <a class="icon"><img src="./img/shopping-cart.svg" alt="" /></a>
+          <a href="#" class="icon" aria-label="Buscar">
+            <img src="./img/search.svg" alt="Buscar" />
+          </a>
+          <a href="#" class="icon" aria-label="Cuenta de usuario">
+            <img src="./img/user.svg" alt="Usuario" />
+          </a>
+          <a href="#" class="icon" aria-label="Carrito de compras">
+            <img src="./img/shopping-cart.svg" alt="Carrito" />
+          </a>
         </div>
       </nav>
     </header>
     <main>
-      <div class="hero">
-        <img src="img/Herosection.jpg" alt="Hero Image" />
+      <section class="hero">
+        <img src="img/Herosection.jpg" alt="Moda sostenible y ecológica" />
         <div class="hero-text">
-          <h1>¡Vístete reponsablemente!</h1>
+          <h1>¡Vístete responsablemente!</h1>
           <p>
             Explora nuestra colección de moda ecológica elaborada con cuidado
             del planeta y tu estilo.
           </p>
           <a href="tienda.html" class="btn">¡COMPRA AHORA!</a>
         </div>
-      </div>
-      <section class="section">
+      </section>
+      <section class="collections-section">
         <h2>Nuestras Colecciones</h2>
-        <div class="colection">
-          <div class="colections">
+        <div class="collections-grid">
+          <article class="collection-item">
             <a href="coleccion-eco-chic.html">
               <img src="img/Coleccion1.jpg" alt="Colección Eco-Chic" />
             </a>
@@ -50,8 +56,8 @@
               Una colección de vestidos elegantes y ecológicos, perfecta para
               cualquier ocasión.
             </p>
-          </div>
-          <div class="colections">
+          </article>
+          <article class="collection-item">
             <a href="coleccion-estilo-sostenible.html">
               <img src="img/Coleccion2.jpg" alt="Colección Estilo Sostenible" />
             </a>
@@ -60,8 +66,8 @@
               Camisas cómodas y con estilo, confeccionadas con materiales
               sostenibles.
             </p>
-          </div>
-          <div class="colections">
+          </article>
+          <article class="collection-item">
             <a href="coleccion-accesorios.html">
               <img src="img/Coleccion3.jpg" alt="Accesorios Ecológicos" />
             </a>
@@ -70,10 +76,10 @@
               Completa tu look con nuestra gama de accesorios sostenibles y
               responsables.
             </p>
-          </div>
+          </article>
         </div>
       </section>
-      <section class="section commitment" id="sustainability">
+      <section class="commitment-section" id="sustainability">
         <h2>Nuestro Compromiso</h2>
         <h3>Prácticas Sostenibles</h3>
         <p>
@@ -81,42 +87,48 @@
           de nuestro proceso, desde la selección de materiales hasta la
           producción y el embalaje.
         </p>
-        <div class="practices">
-          <div class="practice-box">
+        <div class="practices-grid">
+          <article class="practice-box">
             <h4>♻ Materiales Reciclados</h4>
             <p>
               Usamos materiales reciclados para reducir residuos y minimizar
               nuestro impacto ambiental.
             </p>
-          </div>
-          <div class="practice-box">
+          </article>
+          <article class="practice-box">
             <h4>🌱 Producción Eco-Amigable</h4>
             <p>
               Nuestros procesos de producción están diseñados para reducir el
               consumo de energía y agua.
             </p>
-          </div>
-          <div class="practice-box">
+          </article>
+          <article class="practice-box">
             <h4>🤝 Abastecimiento Ético</h4>
             <p>
               Colaboramos con proveedores que comparten nuestro compromiso con
               prácticas sostenibles y éticas.
             </p>
-          </div>
+          </article>
         </div>
       </section>
     </main>
     <footer>
       <div class="footer-container">
-        <nav>
+        <nav class="footer-nav">
           <a href="#privacy">Privacy Policy</a>
           <a href="#terms">Terms of Service</a>
           <a href="#returns">Shipping & Returns</a>
         </nav>
         <div class="social-container">
-          <span><img src="./img/instagram.svg" alt="" /></span>
-          <span><img src="./img/facebook.svg" alt="" /></span>
-          <span><img src="./img/twitter.svg" alt="" /></span>
+          <a href="#" aria-label="Instagram">
+            <img src="./img/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="./img/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img src="./img/twitter.svg" alt="Twitter" />
+          </a>
         </div>
         <div class="rights-container">
           <small>©2024 VerdeModa. All rights reserved.</small>
